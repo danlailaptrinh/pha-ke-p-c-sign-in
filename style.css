@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* common */
+.signin-page-top {
+  background-color: #f0f2f5;
+  height: 98vh;
+  padding-top: 92px;
+}
+
+.signin-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* *******************page top******************** */
+.signin-right {
+  width: 55%;
+}
+
+.signin-left {
+  width: 40%;
+}
+
+.desc {
+  color: #606770;
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 24px;
+  margin: 0px 0px 12px;
+  padding: 0px 0px 12px;
+}
+
+.sign-right__logo {
+  object-fit: cover;
+  height: 70px;
+  width: 212px;
+}
+
+.signin-right__title {
+  color: #333;
+  font-size: 36px;
+  font-family: sans-serif;
+  line-height: 48.24px;
+}
+
+.singin-right__more {
+  display: flex;
+  gap: 19px;
+  margin-top: 12px;
+}
+
+.signin-right__user {
+  border-radius: 8px;
+}
+
+.signin-right__user {
+  border: 1px solid;
+  border-color: #dddfe2;
+  border-radius: 8px 8px 8px 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.signin-right__user.abc {
+  position: relative;
+}
+
+.signin-right__user:hover {
+  box-shadow: 0 0 15px rgb(221, 223, 226);
+}
+
+.signin-right__user--top {
+  height: 160px;
+  width: 160px;
+  background-color: #f5f6f7;
+  border-radius: 8px 8px 0 0;
+}
+
+.signin-right__user--top img {
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.signin-right__user--top .plus {
+  width: 42px;
+  height: 42px;
+  background-color: #1976f2;
+  border-radius: 50%;
+}
+
+.signin-right__user--top figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.signin-right__user--top.abc::after {
+  content: "x";
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 1px;
+  font-family: sans-serif;
+  left: 5px;
+  display: block;
+  transition: all 0.25s;
+  border-radius: 50%;
+}
+
+.signin-right__user--top.abc:hover::after {
+  transform: translate(-8px, -8px);
+  background-color: #fff;
+  border-radius: 50%;
+  color: #385898;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.signin-right__user--top.abc::before {
+  content: "7";
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -5px;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  background-color: #fa3e3e;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.signin-right__user--bottom {
+  background-color: #fff;
+  height: 46px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-rignt__user--name {
+  font-size: 1.2rem;
+  color: #4b4f56;
+  font-family: sans-serif;
+}
+
+.signin-right__user--bottom a {
+  text-decoration: none;
+  color: #0866ff;
+}
+
+/* left */
+.signin-left__box {
+  background-color: #fff;
+  border-radius: 8px 8px 8px;
+  margin-top: 56px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signin-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.box-inside {
+  padding: 16px;
+}
+
+.signin-group__input {
+  width: 364px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+}
+
+.signin-group__input::placeholder {
+  font-size: 17px;
+  font-family: Helvetica;
+}
+
+.sign-left__btn-form {
+  align-items: flex-start;
+  background-color: #0866ff;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 48px;
+  padding: 0px 16px;
+  text-align: center;
+  border: transparent;
+  cursor: pointer;
+  width: 364px;
+}
+
+.signin-left__forget {
+  color: #0866ff;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.76px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 17px;
+}
+
+.forget-box {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.forget-box::after {
+  content: "";
+  display: block;
+  margin-top: 22px;
+  border: 0.1px solid #dddfe2;
+}
+
+.signin-left__signup--btn {
+  display: flex;
+  justify-content: center;
+}
+
+.signin-left__signup {
+  background-color: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 48px;
+  padding: 0px 16px;
+  text-align: center;
+  border: transparent;
+  margin: 26px auto 0;
+  cursor: pointer;
+}
+
+.signin-left__footer {
+  margin-top: 28px;
+}
+
+.signin-left__footer p {
+  text-align: center;
+}
+
+.signin-left__footer a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+/* footer */
+.signin-page-bottom {
+  padding-top: 20px;
+}
+
+.signin-page-bottom .navbar-item {
+  color: #8a8d91;
+  display: inline;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 16.08px;
+  text-align: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signin-page-bottom .navbar-item.item2 {
+  line-height: 19.2px;
+}
+
+.signin-page-bottom .navbar-item:hover {
+  text-decoration: underline;
+}
+
+#hr {
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.footer.foter {
+  margin-top: 24px;
+}
+
+.footer.foter p {
+  color: #8a8d91;
+  display: inline;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 16.08px;
+  text-align: left;
+}
+
+.navbar-item__btn {
+  background-color: #f5f6f7;
+  border-color: #ccd0d5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 0.8px;
+  color: #8a8d91;
+  display: inline-block;
+  justify-content: center;
+  line-height: 18px;
+  padding: 0px 8px;
+  text-align: center;
+  display: inline-flex;
+  position: relative;
+  top: 5px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 17px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
