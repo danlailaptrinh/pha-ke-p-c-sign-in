@@ -1,0 +1,32 @@
+@media (max-width: 899.98px) {
+  .signin-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signin-page-top {
+    padding-top: 0;
+  }
+
+  .sign-right__logo {
+    object-fit: cover;
+    height: 70px;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .singin-right {
+    text-align: center;
+  }
+
+  .signin-left {
+    width: 400px;
+    margin-top: -10px;
+  }
+
+  .signin-group {
+    row-gap: 0;
+  }
+}
