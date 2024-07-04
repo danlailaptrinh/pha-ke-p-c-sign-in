@@ -218,7 +218,7 @@ body {
   text-align: center;
   border: transparent;
   cursor: pointer;
-  width: 364px;
+  width: 100%;
 }
 
 .signin-left__forget {
